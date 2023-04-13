@@ -52,7 +52,7 @@ namespace GithubActionsLab
         [Test]
         public void Subtract_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => Program.Subtract("3", "1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Subtract("3", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, null));
         }
